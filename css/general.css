@@ -1,0 +1,85 @@
+/*
+
+02 - COLORS 
+-- dark
+- #020617;
+
+-- light 
+- 
+
+-- main
+- #A5D7E8;
+- rgb(30, 41, 59)
+
+
+
+
+04 - SHADOWS
+offset-x | offset-y | blur-radius | spread-radius | color 
+- box-shadow: 0 3px 5px 1px rgba(0, 0, 0, 0.2);
+
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --light-text__color: #222;
+  --light-main-bg__color: rgb(241, 243, 245);
+  --light-bg__color: rgb(255, 255, 255);
+  --light-nav-bg__color: rgb(226, 228, 230);
+  --light-hover-nav-bg__color: rgb(241, 243, 245);
+
+  --dark-text__color: #f1f3f5;
+  --dark-main-bg__color: rgb(2, 6, 23);
+  --dark-bg__color: rgb(30, 41, 59);
+  --dark-nav-bg__color: rgb(20, 30, 45);
+  --dark-hover-nav-bg__color: rgb(20, 30, 45);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.dark-mode {
+  color: var(--dark-text__color);
+  --bg: var(--dark-main-bg__color);
+  --weather-panel: var(--dark-bg__color);
+  --nav-bg: var(--dark-nav-bg__color);
+  --hover-nav-bg: var(--dark-hover-nav-bg__color);
+
+  transition: 0.2s all;
+}
+.light-mode {
+  color: var(--light-text__color);
+  --bg: var(--light-main-bg__color);
+  --weather-panel: var(--light-bg__color);
+  --nav-bg: var(--light-nav-bg__color);
+  --hover-nav-bg: var(--light-main-bg__color);
+
+  transition: 0.2s all;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--light-text__color);
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  width: 120rem;
+  margin: 0 auto;
+}
+
+.shadows {
+  box-shadow: 0 1px 3px 0.5px rgb(0, 0, 0, 0.5);
+
+  transition: 0.3s all;
+}
+
+.shadows:hover {
+  box-shadow: 0 0 1.5px 1px var(--border-radius);
+}

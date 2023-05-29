@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/general.css" />
+
+    <!-- Icons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <!-- Typefaces -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap"
+      rel="stylesheet"
+      />
+      
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Asap:wght@400;500&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+      
+      <!-- Scripts -->
+      <script defer src="js/script.js"></script>
+      
+      <title>Weatherly</title>
+      
+    </head>
+    <body class="light-mode">
+      <header class="header">
+      <nav class="nav">
+        <div>
+          <h1 class="main-heading">Weather</h1>
+        </div>
+        <input type="text"  placeholder="Search..." />
+        <div  class="app-options">
+          <span class="default"><ion-icon class="nav-icon" name="home-outline"></ion-icon></span>
+          <ion-icon class="nav-icon screen--mode" mode="light" name="sunny-outline"></ion-icon>
+          <ion-icon class="nav-icon screen--mode " mode="dark" name="moon-outline"></ion-icon>
+          <ion-icon class="nav-icon" mode="dark" name="settings-outline"></ion-icon>
+        </div>
+      </nav>
+    </header>
+
+    <section class="app--container container">
+       
+      <div class="all--panels">
+        <div class="main--panels">
+          <div class="sun">
+            <div class="sun__sunset">
+              <img  class="sun-img"  src="img/light-stat-icons/sunrise.png" alt="sunset"/>             
+              </div>
+            <div class="sun__sunrise">
+              <img class="sun-img" src="img/light-stat-icons/sunset.png" alt="sunrise"/>
+              </div>
+          </div> 
+          <div class="panel current--panel shadows" >           
+            <span class="city"></span>
+            <div class="current--panel__div">
+              <img class="weather-img" src="" alt="weather icon" />      
+              <p class="temp-main"></p>        
+              <span class="temp"></span>
+              <span class="temp high_and_low"><span class="temp_high"></span>/<span class="temp_low"></span></span>
+            </div>    
+          </div>
+          
+          <div class="forecast--panels"> 
+            <div class="additional--weather-info">                             
+                <div class="weather--info-feels">
+                  <h3 class="temp_feels"></h3>
+                  <p class="temp_feels text">feels like</p>
+                </div>
+                <div>
+                  <ul class="weather--info panel" >
+                    <li class="info-item"><img class="stat-icon" src="img/light-stat-icons/rain.png" alt="rain icon" /><span class="rain"></span></li>                    
+                    <li class="info-item"><img class="stat-icon" src="img/light-stat-icons/humidity.png" alt="humidity icon" /><span class="humidity"></span></li>                                                                                        
+                    <li class="info-item"><img class="stat-icon" src="img/light-stat-icons/visibility.png" alt="visibility icon" /><span class="visibility"></span></span></li>
+                    <li class="info-item wind"><img class="stat-icon" src="img/light-stat-icons/wind.png" alt="wind_speed icon" /><p><ion-icon class="arrow-icon" name="chevron-forward-outline"></ion-icon><span class="wind__speed"></span></p></li>              
+                    <li class="info-item"><img class="stat-icon" src="img/light-stat-icons/pressure.png" alt="pressure icon" /><span class="pressure"></span></li>                            
+                  </ul>                                   
+                </div>
+              </div>
+              <div class="forecasts">
+                <div class="weather--tabs">
+                  <div class="weather--tab weather--tab-active" data-tab="1">
+                    hourly
+                  </div>
+                  <div class="weather--tab" data-tab="2">
+                    daily
+                  </div>
+                </div>
+                <div class="forecast--2 forecast--panel">
+                  
+                </div>
+                <div class="forecast--1 forecast--active forecast--panel">    
+                 
+                </div>
+            </div>
+          </div>     
+
+        </div>
+      </section>
+      
+    </body>
+    </html>
+    
