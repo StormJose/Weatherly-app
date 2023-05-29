@@ -40,10 +40,6 @@ offset-x | offset-y | blur-radius | spread-radius | color
   --dark-hover-nav-bg__color: rgb(20, 30, 45);
 }
 
-html {
-  font-size: 62.5%;
-}
-
 .dark-mode {
   color: var(--dark-text__color);
   --bg: var(--dark-main-bg__color);
@@ -61,6 +57,10 @@ html {
   --hover-nav-bg: var(--light-main-bg__color);
 
   transition: 0.2s all;
+}
+
+html {
+  font-size: 62.5%;
 }
 
 body {

@@ -31,7 +31,6 @@ const curTempDescription = document.querySelector(".temp-main");
 const curTempInfo = document.querySelector(".current--panel__div");
 const temp = document.querySelector(".temp");
 const curWindSpeed = document.querySelector(".wind__speed");
-let windArrowDirection = document.querySelector(".arrow-icon");
 const curRain = document.querySelector(".rain");
 const curHumidity = document.querySelector(".humidity");
 const curVisibility = document.querySelector(".visibility");
@@ -39,6 +38,8 @@ const curPressure = document.querySelector(".pressure");
 const weatherImg = document.querySelectorAll(".weather-img");
 const sunrise = document.querySelector(".sun__sunrise");
 const sunset = document.querySelector(".sun__sunset");
+
+let windArrowDirection = document.querySelector(".arrow-icon");
 
 // Fetching data...
 const url =
@@ -97,11 +98,11 @@ const renderWeather = function (weather) {
 
     cityName.textContent = weather.city.name;
     curTempDescription.textContent = call?.weather.main;
-    temp.textContent = `${curTemp.substring(0, 2)}`;
+    temp.textContent = `${(curTemp + "").slice(0, 2)}`;
 
-    tempHigh.textContent = `${String(call.main.temp_max).substring(0, 2)}°`;
-    tempLow.textContent = `${String(call.main.temp_min).substring(0, 2)}°`;
-    tempFeels.textContent = `${String(call.main.feels_like).substring(0, 2)}°`;
+    tempHigh.textContent = `${(call.main.temp_max + "").slice(0, 2)}°`;
+    tempLow.textContent = `${(call.main.temp_min + "").slice(0, 2)}°`;
+    tempFeels.textContent = `${(call.main.feels_like + "").slice(0, 2)}°`;
   };
 
   displayCurWeather(weather.list[0]);
@@ -113,7 +114,7 @@ const renderWeather = function (weather) {
     curHumidity.textContent = `${call.main.humidity} %`;
     curVisibility.textContent = `${call.visibility / 1000} km`;
     curPressure.textContent = `${call.main.pressure} Pah`;
-    curWindSpeed.textContent = `${String(call.wind.speed * 3.6).substring(
+    curWindSpeed.textContent = `${(call.wind.speed * 3.6 + "").slice(
       0,
       3
     )} km/h`;
@@ -123,7 +124,6 @@ const renderWeather = function (weather) {
 
   // displaying sun info
   const getSunInfo = function (sun) {
-    // sunset | sunrise
     // to obtain the date in miliseconds, multiply times 1000
     const sunInfo = sun.city;
 
@@ -166,14 +166,17 @@ const renderWeather = function (weather) {
       hourlyForecastPanel.insertAdjacentHTML("afterbegin", html);
     });
 
-    // display data functionality
+    const getWeather = function (data) {
+      displayIcon(data);
+      displayCurWeather(data);
+      getWeatherInfo(data);
+    };
 
+    // display data functionality
     const allPanels = document.querySelectorAll(".day_forecast-panel");
     allPanels.forEach(function (panel) {
       panel.addEventListener("click", function () {
-        getWeatherInfo(hourlyForecast[panel.dataset.set]);
-        displayCurWeather(hourlyForecast[panel.dataset.set]);
-        displayIcon(hourlyForecast[panel.dataset.set]);
+        getWeather(hourlyForecast[panel.dataset.set]);
 
         allPanels.forEach((panel) =>
           panel.classList.remove("day_forecast-panel--active")
@@ -195,9 +198,8 @@ const renderWeather = function (weather) {
   // go back to current weather
   const allPanels = document.querySelectorAll(".day_forecast-panel");
   defaultWeatherBtn.addEventListener("click", function () {
-    displayIcon(weather.list[0]);
-    displayCurWeather(weather.list[0]);
-    getWeatherInfo(weather.list[0]);
+    getWeather(weather.list[0]);
+
     defaultWeatherBtn.style.opacity = 0.2;
     defaultWeatherBtn.style.cursor = "auto";
 
