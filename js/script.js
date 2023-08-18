@@ -20,6 +20,7 @@ const iconIDs = {
 // CSS classes
 const defaultWeatherBtn = document.querySelector(".default");
 
+
 const rootEl = document.querySelector(":root");
 const body = document.querySelector("body");
 const cityName = document.querySelector(".city");
