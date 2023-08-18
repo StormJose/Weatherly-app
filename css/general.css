@@ -48,6 +48,7 @@ offset-x | offset-y | blur-radius | spread-radius | color
   --hover-nav-bg: var(--dark-hover-nav-bg__color);
 
   transition: 0.2s all;
+  
 }
 .light-mode {
   color: var(--light-text__color);
