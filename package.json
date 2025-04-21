@@ -1,0 +1,15 @@
+{
+  "name": "weatherly-app",
+  "version": "1.0.0",
+  "description": "A weather app",
+  "source": "index.html",
+  "dependencies": {
+    "parcel": "^2.12.0"
+  },
+  "scripts": {
+    "start": " parcel index.html --no-cache",
+    "build": "parcel index.html --dist-dir ./dist --no-cache"
+  },
+  "author": "José Ricardo",
+  "license": "ISC"
+}

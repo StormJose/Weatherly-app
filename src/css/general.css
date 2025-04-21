@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&family=Inter:ital,wght@0,400..800;1,400..800&display=swap');
 /*
 
 02 - COLORS 
@@ -18,24 +19,39 @@ offset-x | offset-y | blur-radius | spread-radius | color
 
 */
 
+
+html {
+  font-size: 62.5%;
+}
+
+
 * {
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
 }
 
 :root {
   --light-text__color: #222;
+  --light-input-hover__color: rgb(209, 213, 219);
   --light-main-bg__color: rgb(241, 243, 245);
   --light-bg__color: rgb(255, 255, 255);
   --light-nav-bg__color: rgb(226, 228, 230);
   --light-hover-nav-bg__color: rgb(241, 243, 245);
+  --light-icon: rgb(154, 155, 159);
 
   --dark-text__color: #f1f3f5;
   --dark-main-bg__color: rgb(2, 6, 23);
   --dark-bg__color: rgb(30, 41, 59);
   --dark-nav-bg__color: rgb(20, 30, 45);
   --dark-hover-nav-bg__color: rgb(20, 30, 45);
+  --dark-icon: rgb(30, 41, 59);
+}
+
+
+/* Parcel generated div */
+#brk_yuan {
+  display: none;
 }
 
 .dark-mode {
@@ -44,41 +60,74 @@ offset-x | offset-y | blur-radius | spread-radius | color
   --weather-panel: var(--dark-bg__color);
   --nav-bg: var(--dark-nav-bg__color);
   --hover-nav-bg: var(--dark-hover-nav-bg__color);
-
+  --search-input: var(--dark-bg__color);
+  --search-input-hover__color: var(--dark-bg__color);
+  --icon: var(--dark-icon);
+  
   transition: 0.2s all;
   
 }
+
+.dark-mode input {
+  color: var(--dark-text__color);
+}
+
 .light-mode {
-  color: var(--light-text__color);
+  /* color: var(--light-text__color); */
   --bg: var(--light-main-bg__color);
   --weather-panel: var(--light-bg__color);
   --nav-bg: var(--light-nav-bg__color);
-  --hover-nav-bg: var(--light-main-bg__color);
+  --hover-nav-bg: var(--light-nav-bg__color);
+  --search-input-hover__color: var(--light-bg__color);
+  --icon: var(--light-icon);
 
   transition: 0.2s all;
 }
 
-html {
-  font-size: 62.5%;
-}
 
 body {
+  min-height: 100vh;
   background-color: var(--bg);
   color: var(--light-text__color);
-  font-family: "Poppins", sans-serif;
+  font-family: "Rubik", sans-serif;
 }
 
 .container {
-  width: 120rem;
+  max-width: 120rem;
   margin: 0 auto;
 }
 
-.shadows {
-  box-shadow: 0 1px 3px 0.5px rgb(0, 0, 0, 0.5);
 
+.nav__link:link, .nav__link:visited {
+  color: inherit;
+  text-decoration: none;
+  
+}
+
+.nav__link:hover, .nav__link:active {
+  text-decoration: underline;
+}
+
+.shadows {
+  box-shadow: 0 1px 20 0.5px rgb(0, 0, 0, 0.5);
+  
   transition: 0.3s all;
 }
 
 .shadows:hover {
   box-shadow: 0 0 1.5px 1px var(--border-radius);
+}
+
+footer {
+
+  margin-top: auto;
+  font-size: 1.4rem;
+  padding: 0 3.2rem;
+  text-align: center;
+}
+
+.footer--contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
 }
