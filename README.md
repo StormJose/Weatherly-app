@@ -2,7 +2,7 @@
 
 Informações de clima atual e futuras previsões.
 
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/StormJose/Omnifood-Project/commit-activity) [![Website shields.io](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](http://shields.io/) [![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/StormJose/Omnifood-Project/blob/main/LICENSE) [![GitHub branches](https://badgen.net/github/branches/Naereen/Strapdown.js)](https://github.com/StormJose/Omnifood-Project) [![GitHub release](https://img.shields.io/github/release/Naereen/StrapDown.js.svg)](https://GitHub.com/StormJose/Omnifood-Project/tags)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/StormJose/Weatherly-app/commit-activity) [![Website shields.io](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](http://shields.io/) [![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/StormJose/Weatherly-app/blob/main/LICENSE) [![GitHub branches](https://badgen.net/github/branches/Naereen/Strapdown.js)](https://github.com/StormJose/Weatherly-app) [![GitHub release](https://img.shields.io/github/release/Naereen/StrapDown.js.svg)](https://GitHub.com/StormJose/Weatherly-app/tags)
 
 
 ## Descrição
@@ -23,7 +23,7 @@ Este é um site de Clima e dados de previsão do tempo, e foi um dos meus primei
 
 ### Weatherly v2
 
-Esta [versão](https://github.com/StormJose/Weatherly-app/docs/release-notes.md) atualiza algumas funções básicas do app e trás novidades como: Pesquisa por localização, responsividade para mais dispositivos entre outros ajustes. Para informações detalhadas, confira as [Notas de Lançamento](https://github.com/StormJose/Weatherly-app/docs/release-notes.md)
+Esta [versão](https://github.com/StormJose/Weatherly-app/blob/main/docs/release-notes.md) atualiza algumas funções básicas do app e trás novidades como: Pesquisa por localização, responsividade para mais dispositivos entre outros ajustes. Para informações detalhadas, confira as [Notas de Lançamento](https://github.com/StormJose/Weatherly-app/blob/main/docs/release-notes.md)
 
 ## Instalação
 

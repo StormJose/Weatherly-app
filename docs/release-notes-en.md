@@ -1,10 +1,10 @@
 # Release Notes
 
-For the ![Portuguese](https://github.com/StormJose/Omnifood-Project/blob/main/docs/release-notes.md) version.
+For the ![Portuguese](https://github.com/StormJose/Weatherly-app/blob/main/docs/release-notes.md) version.
 
 ## Version 2.0.0 – 2025-04-21
 
-![page-image](https://github.com/StormJose/Omnifood-Project/blob/main/docs/img/main-weatherly-screenshot.PNG?raw=true)
+![page-image](https://github.com/StormJose/Weatherly-app/blob/main/docs/img/main-weatherly-screenshot.png)
 
 
 
@@ -12,7 +12,7 @@ For the ![Portuguese](https://github.com/StormJose/Omnifood-Project/blob/main/do
 - **Global Search Functionality**  
   Users can now search for weather data from any location worldwide, not just their current geolocation. This improves usability for travelers, planners, or just curious minds.
 
-![page-image](https://github.com/StormJose/Omnifood-Project/blob/main/docs/img/search-weatherly-screenshot.PNG?raw=true)
+![page-image](https://github.com/StormJose/Weatherly-app/blob/main/docs/img/search-weatherly-screenshot.png)
 
 
 ### 🎨 UI & UX Improvements
@@ -24,7 +24,7 @@ For the ![Portuguese](https://github.com/StormJose/Omnifood-Project/blob/main/do
 - Footer section at the bottom of the app to acknowledge open APIs and contributors.
 
 
-![page-image](https://github.com/StormJose/Omnifood-Project/blob/main/docs/img/tooltip-weatherly-screenshot.PNG?raw=true)
+![page-image](https://github.com/StormJose/Weatherly-app/blob/main/docs/img/tooltip-weatherly-screenshot.png)
 
 
 

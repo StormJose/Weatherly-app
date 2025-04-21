@@ -1,17 +1,17 @@
 # Notas de Lançamento
 
-Para a versão em ![Inglês](https://github.com/StormJose/Omnifood-Project/blob/main/docs/release-notes-en.md).
+Para a versão em ![Inglês](https://github.com/StormJose/Weatherly-app/blob/main/docs/release-notes-en.md).
 
 ## Versão 2.0.0 – 21/04/2025
 
-![page-image](https://github.com/StormJose/Omnifood-Project/blob/main/docs/img/main-weatherly-screenshot.PNG?raw=true)
+![page-image](https://github.com/StormJose/Weatherly-app/blob/main/docs/img/main-weatherly-screenshot.png)
 
 
 ### ✨ Novas Funcionalidades
 - **Funcionalidade de Busca Global**  
   Agora os usuários podem buscar dados meteorológicos de qualquer lugar do mundo, não apenas com base na geolocalização atual. Isso melhora a usabilidade para viajantes, planejadores ou simplesmente curiosos.
 
-![page-image](https://github.com/StormJose/Omnifood-Project/blob/main/docs/img/search-weatherly-screenshot.PNG?raw=true)
+![page-image](https://github.com/StormJose/Weatherly-app/blob/main/docs/img/search-weatherly-screenshot.png)
 
 ### 🎨 Melhorias na UI & UX
 - Aprimoramento das proporções dos elementos e da responsividade em diferentes dispositivos.
@@ -22,7 +22,7 @@ Para a versão em ![Inglês](https://github.com/StormJose/Omnifood-Project/blob/
 - Inclusão de uma **seção de Créditos** no rodapé do app para reconhecimento de APIs abertas e contribuições externas.
 
 
-![page-image](https://github.com/StormJose/Omnifood-Project/blob/main/docs/img/tooltip-weatherly-screenshot.PNG?raw=true)
+![page-image](https://github.com/StormJose/Weatherly-app/blob/main/docs/img/tooltip-weatherly-screenshot.png)
 
 
 
