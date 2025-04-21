@@ -17,17 +17,17 @@ Weather app built on JavaScript using Fetch API and OpenWeather API
 It doesn't require any special external resource, only installing the repository and opening it in a code editor is enough to run it.
 
 ## Usage
-The app requires a browser a internet connection to use. 
+The app requires a browser and an internet connection to use. 
 
 ## License
 Standard ISC license.
 
 ## Credits 
-Project relies on OpenWeather API to fetch weather data using the free services available.
+This project relies on OpenWeather API to fetch weather data using the free services available.
 [https://openweathermap.org/api](https://openweathermap.org/api)
 
 ## Changelog
 None so far.
 
 ## Related Projects
-If you have other related projects, provide links and descriptions to them here.
+
