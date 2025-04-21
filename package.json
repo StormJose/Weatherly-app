@@ -4,6 +4,7 @@
   "description": "A weather app",
   "source": "index.html",
   "dependencies": {
+    "@parcel/watcher": "^2.5.1",
     "parcel": "^2.12.0"
   },
   "scripts": {
