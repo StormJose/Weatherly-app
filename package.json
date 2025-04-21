@@ -5,11 +5,13 @@
   "source": "index.html",
   "dependencies": {
     "@parcel/watcher": "^2.5.1",
+    "lightningcss": "1.21.0",
     "parcel": "^2.12.0"
   },
   "scripts": {
     "start": " parcel index.html --no-cache",
-    "build": "parcel index.html --dist-dir ./dist --no-cache"
+    "build": "parcel index.html --dist-dir ./dist --no-cache",
+    "postinstall": "npm rebuild lightningcss || true"
   },
   "author": "José Ricardo",
   "license": "ISC"
