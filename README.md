@@ -7,7 +7,7 @@ Informações de clima atual e futuras previsões.
 
 ## Descrição
 
-Este é um site de Clima e dados de previsão do tempo, e foi um dos meus primeiros projetos na área do desenvolvimento web em 2022. Hoje, o utilizo para acompanhar meu próprio progresso em Front-End, incrementando suas funcionalidades iniciais e o atualizando com novas ferramentas da indústria assim que possível
+Este é um site de Clima e informações de previsão do tempo, e foi um dos meus primeiros projetos na área do desenvolvimento web em 2022. Hoje, o utilizo para acompanhar meu próprio progresso em Front-End, incrementando suas funcionalidades iniciais e o atualizando com novas ferramentas da indústria assim que possível
 
 
 ## Sumário
